@@ -271,6 +271,7 @@ def main() :
             print("Terjadi kesalahan saat menyimpan file:", str(e))
     print()
     print("Terima kasih!")
+
     finalchoice = input("Ingin kembali memecahkan Beach Protocol lainnya? (y/n)")
 
     while (finalchoice.lower() != "y" and finalchoice.lower() != "n") :
