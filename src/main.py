@@ -117,7 +117,6 @@ def main() :
 
         file_path = r"../test/" + input_file
         with open(file_path, "r") as my_file:
-            # your code to read the file
             i = 0 
             for line in my_file:
                 i = i + 1
