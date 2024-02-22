@@ -271,7 +271,19 @@ def main() :
             print("Terjadi kesalahan saat menyimpan file:", str(e))
     print()
     print("Terima kasih!")
-    exit()
+    finalchoice = input("Ingin kembali memecahkan Beach Protocol lainnya? (y/n)")
+
+    while (finalchoice.lower() != "y" and finalchoice.lower() != "n") :
+        print("Input salah!")
+        print()
+        finalchoice = input("Ingin kembali memecahkan Beach Protocol lainnya? (y/n) ")
+
+    if finalchoice.lower() == "y" :
+        main()
+    elif finalchoice.lower() == "n" :
+        print("Sampai jumpa kembali!")
+        exit()
+
 
 if __name__ == "__main__":
     print("   ______      __                                __      ___   ____  __________ ")
